@@ -1,12 +1,14 @@
 const ButtonPanel = ({tasks, setTasks}) => {
+    const addTask = () => {
+        const title = document.querySelector('input[placeholder="Title"]').value;
+        const description = document.querySelector('input[placeholder="Description"]').value;
+        // Do not add empty tasks
+        if (!title || !description) return;
+        setTasks([...tasks, {title, description}]);
+    }
     return (
         <div className='buttonpanel'>
-            <button type="button" onClick={() => {
-                const title = document.querySelector('input[placeholder="Title"]').value;
-                const description = document.querySelector('input[placeholder="Description"]').value;
-                setTasks([...tasks, {title, description}]);
-            }
-            }>Add Task</button>
+            <button type="button" onClick={() => addTask()}>Add Task</button>
             <button type="button" onClick={() => setTasks([])}>Clear Tasks</button>
         </div>
     );
