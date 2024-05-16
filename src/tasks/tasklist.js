@@ -1,9 +1,7 @@
 import React from 'react';
-import {data} from '../data/data';
 import Task from './task';
 
-const TaskList = () => {
-    const [tasks, setTasks] = React.useState(data);
+const TaskList = ({tasks, setTasks}) => {
     return (
         <div className='tasklist'>
             <ul>
@@ -13,13 +11,6 @@ const TaskList = () => {
                     </li>
                 ))}
             </ul>
-            <button onClick={() => {
-                const title = document.querySelector('input[placeholder="Title"]').value;
-                const description = document.querySelector('input[placeholder="Description"]').value;
-                setTasks([...tasks, {title, description}]);
-            }
-            }>Add Task</button>
-            <button onClick={() => setTasks([])}>Clear Tasks</button>
         </div>
     );
 }

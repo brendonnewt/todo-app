@@ -56,3 +56,40 @@ ul {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   width: 100%;
 }
+
+.tasklist {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+
+}
+
+button {
+  background-color: rgb(86, 100, 60);
+  margin: 5px;
+  color: white;
+  border: none;
+  font-size: large;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(169, 206, 99);
+}
+
+.textfields {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.submit {
+  background-color: rgb(169, 206, 99);
+}
+
+.submit:hover {
+  background-color: rgb(86, 100, 60);
+}
