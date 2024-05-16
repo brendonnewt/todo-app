@@ -1,4 +1,4 @@
-import { textfields } from "./data/textfields";
+import { textfields } from "../data/textfields";
 
 const TextFields = () => {
     return (

@@ -1,6 +1,6 @@
 import React from 'react';
 import HeaderBar from './headerbar';
-import TaskList from './tasklist';
+import TaskList from './tasks/tasklist';
 import InputPanel from './inputpanel';
 
 export const App = () => {

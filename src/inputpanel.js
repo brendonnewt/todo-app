@@ -1,5 +1,5 @@
 import React from "react";
-import TextFields from "./textfields";
+import TextFields from "./input/textfields";
 
 const InputPanel = () => {
     return (
