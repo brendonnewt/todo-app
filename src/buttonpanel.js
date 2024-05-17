@@ -5,6 +5,10 @@ const ButtonPanel = ({tasks, setTasks}) => {
         // Do not add empty tasks
         if (!title || !description) return;
         setTasks([...tasks, {title, description}]);
+
+        // Clear input fields
+        document.querySelector('input[placeholder="Title"]').value = '';
+        document.querySelector('input[placeholder="Description"]').value = '';
     }
     return (
         <div className='buttonpanel'>
