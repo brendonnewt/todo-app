@@ -33,6 +33,12 @@ ul {
 
 }
 
+li {
+  padding: 0;
+  margin: 0;
+
+}
+
 .header {
   background-color: rgb(86, 100, 60);
   padding: 20px;
@@ -43,7 +49,7 @@ ul {
   text-align: center;
   position: relative;
   top: 0;
-  margin-bottom: 2vh;
+  margin-bottom: 2.5vh;
 }
 
 .task {
@@ -51,19 +57,20 @@ ul {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  margin: 10px;
+  margin-bottom: 1.25vh;
   background-color: white;
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   width: 100%;
-  align-self: flex-start;
+  box-sizing: border-box;
 }
 
 .tasklist {
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 85%;
   height: 70%;
+  margin-bottom: 1.5vh;
 
 }
 
